@@ -62,4 +62,18 @@ fun main() {
 
     println("--- Fim Da Questão 2 ---")
 
+    val indice = 12
+    var soma = 0
+    var k = 1
+
+    for (i in k..indice - 1) { // -1 Pois usando o range do kotlin, começa por 1 e não por 0
+        k++
+        soma += k
+    }
+
+    println(soma)
+
+    println("--- Fim Da Questão 3 ---")
+
+
 }
