@@ -4,12 +4,12 @@ fun fibonacciSequence(limit: Int, n: Int) {
     var n2 = 1
     var n3: Int
 
-    val fibonacciList = mutableListOf(0,1)
+    val fibonacciList = mutableListOf(0, 1)
 
     print("$n1 ")
     print("$n2 ")
 
-    for (i in 3 .. limit) {
+    for (i in 3..limit) {
         n3 = n1 + n2
         fibonacciList.add(n3)
         print("$n3 ")
@@ -35,5 +35,31 @@ fun main() {
     if (limit != null && n != null) {
         fibonacciSequence(limit, n)
     }
+
+    println("--- Fim Da Questão 1 ---")
+
+    print("Insira um texto: ")
+    val userPrompt = readlnOrNull().toString()
+    var upperCase = 0
+    var lowerCase = 0
+
+
+    if (userPrompt.isNotEmpty()) {
+        userPrompt.forEach { char ->
+            if ('A' == char) {
+                upperCase++
+            }
+
+            if ('a' == char) {
+                lowerCase++
+            }
+
+        }
+    }
+
+    println("A apareceu $upperCase vez(es).")
+    println("a apareceu $lowerCase vez(es).")
+
+    println("--- Fim Da Questão 2 ---")
 
 }
