@@ -75,13 +75,19 @@ fun main() {
 
     println("--- Fim Da Questão 3 ---")
 
-    println("a) 1, 3, 5, 7, 9\n" +
-            "b) 2, 4, 8, 16, 32, 64, 128\n" +
-            "c) 0, 1, 4, 9, 16, 25, 36, 49\n" +
-            "d) 4, 16, 36, 64, 100\n" +
-            "e) 1, 1, 2, 3, 5, 8, 13\n" +
-            "f) 2,10, 12, 16, 17, 18, 19, 20")
+    println(
+        "a) 1, 3, 5, 7, 9\n" +
+                "b) 2, 4, 8, 16, 32, 64, 128\n" +
+                "c) 0, 1, 4, 9, 16, 25, 36, 49\n" +
+                "d) 4, 16, 36, 64, 100\n" +
+                "e) 1, 1, 2, 3, 5, 8, 13\n" +
+                "f) 2,10, 12, 16, 17, 18, 19, 20"
+    )
 
     println("--- Fim Da Questão 4 ---")
+
+    println("Questão 5 -> Para descobrir qual interruptor controla cada lâmpada, eu começaria ligando o primeiro interruptor e o deixaria ligado por alguns minutos, para que a lâmpada correspondente aqueça. Depois, desligaria esse interruptor, ligaria o segundo e, em seguida, iria até a sala das lâmpadas. Lá, verificaria as lâmpadas: a que estivesse acesa seria a do segundo interruptor; a que estivesse apagada, mas quente, seria a do primeiro interruptor; e a lâmpada apagada e fria seria controlada pelo terceiro interruptor, que eu não liguei. Dessa forma, eu identificaria todas as lâmpadas em apenas uma ida à sala.")
+
+    println("--- Fim Da Questão 5 ---")
 
 }
