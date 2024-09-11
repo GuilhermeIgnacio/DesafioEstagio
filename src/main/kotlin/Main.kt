@@ -26,6 +26,48 @@ fun fibonacciSequence(limit: Int, n: Int) {
 }
 
 fun main() {
+
+    while (true) {
+
+        println("1 -> Questão 1\n" +
+                "2 -> Questão 2\n" +
+                "3 -> Questão 3\n" +
+                "4 -> Questão 4\n" +
+                "5 -> Questão 5")
+        println("10 -> Para Sair")
+        println("")
+        val lorem = readln().toInt()
+        println()
+
+        if (lorem == 10) {
+            break
+        }
+
+        if (lorem == 1) {
+            questao1()
+        }
+
+        if (lorem == 2) {
+            questao2()
+        }
+
+        if (lorem == 3) {
+            questao3()
+        }
+
+        if (lorem == 4) {
+            questao4()
+        }
+
+        if (lorem == 5) {
+            questao5()
+        }
+
+    }
+
+}
+
+private fun questao1() {
     print("Informe um limite: ")
     val limit = readlnOrNull()?.toIntOrNull()
 
@@ -37,7 +79,9 @@ fun main() {
     }
 
     println("--- Fim Da Questão 1 ---")
+}
 
+private fun questao2() {
     print("Insira um texto: ")
     val userPrompt = readlnOrNull().toString()
     var upperCase = 0
@@ -61,7 +105,9 @@ fun main() {
     println("a apareceu $lowerCase vez(es).")
 
     println("--- Fim Da Questão 2 ---")
+}
 
+private fun questao3() {
     val indice = 12
     var soma = 0
     var k = 1
@@ -74,7 +120,9 @@ fun main() {
     println("SOMA = $soma")
 
     println("--- Fim Da Questão 3 ---")
+}
 
+private fun questao4() {
     println(
         "a) 1, 3, 5, 7, 9\n" +
                 "b) 2, 4, 8, 16, 32, 64, 128\n" +
@@ -85,9 +133,10 @@ fun main() {
     )
 
     println("--- Fim Da Questão 4 ---")
+}
 
+private fun questao5() {
     println("Questão 5 -> Para descobrir qual interruptor controla cada lâmpada, eu começaria ligando o primeiro interruptor e o deixaria ligado por alguns minutos, para que a lâmpada correspondente aqueça. Depois, desligaria esse interruptor, ligaria o segundo e, em seguida, iria até a sala das lâmpadas. Lá, verificaria as lâmpadas: a que estivesse acesa seria a do segundo interruptor; a que estivesse apagada, mas quente, seria a do primeiro interruptor; e a lâmpada apagada e fria seria controlada pelo terceiro interruptor, que eu não liguei. Dessa forma, eu identificaria todas as lâmpadas em apenas uma ida à sala.")
 
     println("--- Fim Da Questão 5 ---")
-
 }
